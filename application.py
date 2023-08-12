@@ -5,7 +5,8 @@ import numpy as np
 from sklearn.preprocessing import StandardScaler #beacuse of Standard Scaler
 
 
-app = Flask(__name__)
+application = Flask(__name__)
+app = application
 
 #Import Ridge  Regressor model and Standard Scale pickel
 standard_scaler = p.load(open('models/Scaler.pkl' , 'rb'))
